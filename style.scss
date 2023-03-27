@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: cadetblue;
+        .containerToDoList {
+            h1 {
+                text-align: center;
+            }
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+
+                input {
+                    padding: 5px;
+                    background-color: rgb(95, 241, 95);
+                    outline: none;
+                    border: none;
+                    border-radius: 8px;
+                }
+            }
+            .result {
+                .r-item {
+                    padding: 5px;
+                    margin: 8px  0;
+                    background-color: rgb(207, 118, 200);
+                    outline: none;
+                    border: none;
+                    border-radius: 8px;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .iconlar{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 7px;
+                        .fa-trash{
+                            color: red;
+                            cursor: pointer;
+                        }
+                        .fa-pen{
+                            color: green;
+                            cursor: pointer;
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+        button {
+            background-color: transparent;
+            padding: 2px 2px;
+            border: 2px solid black;
+            border-radius: 100%;
+            .fa-solid {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.change{
+    text-decoration: line-through;
+}
